@@ -1,0 +1,35 @@
+{
+  "name": "esi-webpack-plugin",
+  "version": "0.0.0",
+  "description": "A Webpack plugin to resolve ESI includes",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlowgren/esi-webpack-plugin.git"
+  },
+  "author": "Joacim Löwgren <joacim.lowgren@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlowgren/esi-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
+  "dependencies": {
+    "esi": "^0.8.1",
+    "webpack-sources": "^1.0.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  }
+}
