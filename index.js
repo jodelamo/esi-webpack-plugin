@@ -7,7 +7,7 @@ function EsiWebpackPlugin(options = {}) {
   const {
     baseUrl,
     onError,
-    processOptions = {}
+    processOptions = {},
   } = options;
 
   this.options = options;
@@ -25,6 +25,7 @@ EsiWebpackPlugin.prototype.apply = function apply(compiler) {
   compiler.plugin('emit', (compilation, callback) => {
     this.esi.process(compilation.assets[FILENAME].source(), processOptions)
       .then((result) => {
+        // eslint-disable-next-line
         compilation.assets[FILENAME] = new RawSource(result);
         callback();
       });
