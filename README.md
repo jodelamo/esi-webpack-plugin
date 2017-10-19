@@ -2,6 +2,8 @@
 
 > A Webpack plugin to resolve ESI includes.
 
+**Note:** Due to the limited use case this was made for, this plugin is currently limited to a single asset: `index.html`. Feel free to help with [this issue](https://github.com/jlowgren/esi-webpack-plugin/issues/1) if you have what it takes to apply the plugin on all emitted HTML assets. 😘
+
 ## Install
 
 ```sh
