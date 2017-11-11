@@ -2,6 +2,8 @@
 
 > A Webpack plugin to resolve ESI includes.
 
+Useful in conjunction with [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) to resolve ESI includes (using [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi)) in all emitted HTML files.
+
 ## Install
 
 ```sh
@@ -14,17 +16,21 @@ Options map more or less directly to the options provided by
 [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi).
 
 ```js
-new EsiWebpackPlugin({
-  baseUrl: 'http://example.com',
-  onError(src, err) {
-    // ...
-  },
-  processOptions: {
-    headers: {
-      'Authorization': '...'
+plugins: [
+  // ...
+  new HtmlWebpackPlugin(),
+  new EsiWebpackPlugin({
+    baseUrl: 'http://example.com',
+    onError(src, err) {
+      console.error(`Something went south: ${err}`);
+    },
+    processOptions: {
+      headers: {
+        'Authorization': '...'
+      }
     }
-  }
-})
+  })
+]
 ```
 
 ## License
