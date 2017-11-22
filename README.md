@@ -16,21 +16,25 @@ Options map more or less directly to the options provided by
 [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi).
 
 ```js
-plugins: [
+const EsiWebpackPlugin = require('esi-webpack-plugin');
+
+module.exports = {
   // ...
-  new HtmlWebpackPlugin(),
-  new EsiWebpackPlugin({
-    baseUrl: 'http://example.com',
-    onError(src, err) {
-      console.error(`Something went south: ${err}`);
-    },
-    processOptions: {
-      headers: {
-        'Authorization': '...'
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new EsiWebpackPlugin({
+      baseUrl: 'http://example.com',
+      onError(src, err) {
+        console.error(`Error when resolving ${src}: ${err}`);
+      },
+      processOptions: {
+        headers: {
+          'Authorization': 'Basic Zm9vOmJhcgo='
+        }
       }
-    }
-  })
-]
+    })
+  ]
+};
 ```
 
 ## License
