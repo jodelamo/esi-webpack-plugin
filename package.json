@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "nodesi": "^1.6.0",
+    "nodesi": "^1.7.1",
     "webpack-sources": "^1.0.1"
   },
   "eslintConfig": {
@@ -33,7 +33,7 @@
     }
   },
   "devDependencies": {
-    "eslint": "^4.9.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.0.2",
     "eslint-plugin-import": "^2.7.0"
   }
