@@ -1,6 +1,6 @@
 {
   "name": "esi-webpack-plugin",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A Webpack plugin to resolve ESI includes",
   "main": "index.js",
   "engines": {
