@@ -20,20 +20,23 @@ class EsiWebpackPlugin {
   }
 
   apply(compiler) {
+    compiler.hooks.emit.tapAsync('EsiWebpackPlugin', (compilation, callback) => this.emit(compilation, callback));
+  }
+
+  emit(compilation, callback) {
+    const { assets } = compilation;
     const { processOptions } = this.options;
 
-    compiler.plugin('emit', ({ assets }, callback) => {
-      Object.keys(assets).forEach((filename) => {
-        if (path.extname(filename) === '.html') {
-          this.esi.process(assets[filename].source(), processOptions)
-            .then((result) => {
-              // eslint-disable-next-line
-              assets[filename] = new RawSource(result);
-              callback();
-            })
-            .catch(err => callback(err));
-        }
-      });
+    Object.keys(assets).forEach((filename) => {
+      if (path.extname(filename) === '.html') {
+        this.esi.process(assets[filename].source(), processOptions)
+          .then((result) => {
+            // eslint-disable-next-line
+            assets[filename] = new RawSource(result);
+            callback();
+          })
+          .catch(err => callback(err));
+      }
     });
   }
 }
