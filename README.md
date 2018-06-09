@@ -4,10 +4,12 @@
 
 Useful in development in conjunction with [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) to resolve ESI includes (using [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi)) in all emitted HTML files.
 
+Requires a Webpack version of < 4.
+
 ## Install
 
 ```sh
-npm install -D esi-webpack-plugin
+npm install --save-dev esi-webpack-plugin
 ```
 
 ## Usage
@@ -16,6 +18,7 @@ Options map more or less directly to the options provided by
 [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi).
 
 ```js
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const EsiWebpackPlugin = require('esi-webpack-plugin');
 
 module.exports = {
