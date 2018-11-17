@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "nodesi": "^1.7.1",
+    "nodesi": "^1.8.0",
     "webpack-sources": "^1.0.1"
   },
   "eslintConfig": {
