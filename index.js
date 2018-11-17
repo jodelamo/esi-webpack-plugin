@@ -27,15 +27,15 @@ class EsiWebpackPlugin {
     const { assets } = compilation;
     const { processOptions } = this.options;
 
-    Object.keys(assets).forEach((filename) => {
+    Object.keys(assets).forEach(async (filename) => {
       if (path.extname(filename) === '.html') {
-        this.esi.process(assets[filename].source(), processOptions)
-          .then((result) => {
-            // eslint-disable-next-line
-            assets[filename] = new RawSource(result);
-            callback();
-          })
-          .catch(err => callback(err));
+        try {
+          const result = await this.esi.process(assets[filename].source(), processOptions);
+          assets[filename] = new RawSource(result);
+          callback();
+        } catch (err) {
+          callback(err);
+        }
       }
     });
   }
