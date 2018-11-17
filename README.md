@@ -4,7 +4,10 @@
 
 Useful in development in conjunction with [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) to resolve ESI includes (using [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi)) in all emitted HTML files.
 
-This plugin requires Webpack 4 to work. For earlier versions of Webpack, use `v1.0.0`.
+Version requirements:
+
+- Node.js: `v8.12.0`
+- Webpack: `v4.0.0`
 
 ## Install
 
