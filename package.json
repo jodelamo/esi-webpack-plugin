@@ -1,6 +1,6 @@
 {
   "name": "esi-webpack-plugin",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A Webpack plugin to resolve ESI includes",
   "main": "index.js",
   "engines": {
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "nodesi": "^1.8.0",
-    "webpack-sources": "^1.0.1"
+    "nodesi": "^1.11.0",
+    "webpack-sources": "^1.4.3"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
@@ -30,8 +30,8 @@
     }
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
   }
 }
