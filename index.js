@@ -1,6 +1,5 @@
 const ESI = require('nodesi');
-const path = require('path');
-const { RawSource } = require('webpack-sources');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 class EsiWebpackPlugin {
   constructor(options = {}) {
@@ -20,23 +19,23 @@ class EsiWebpackPlugin {
   }
 
   apply(compiler) {
-    compiler.hooks.emit.tapAsync('EsiWebpackPlugin', (compilation, callback) => this.emit(compilation, callback));
-  }
+    compiler.hooks.compilation.tap('EsiWebpackPlugin', (compilation) => {
+      HtmlWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(
+        'EsiWebpackPlugin',
+        async (data, callback) => {
+          const { html } = data;
+          const { processOptions } = this.options;
 
-  emit(compilation, callback) {
-    const { assets } = compilation;
-    const { processOptions } = this.options;
+          try {
+            const result = await this.esi.process(html, processOptions);
+            data.html = result;
 
-    Object.keys(assets).forEach(async (filename) => {
-      if (path.extname(filename) === '.html') {
-        try {
-          const result = await this.esi.process(assets[filename].source(), processOptions);
-          assets[filename] = new RawSource(result);
-          callback();
-        } catch (err) {
-          callback(err);
+            callback(null, data);
+          } catch (err) {
+            callback(err);
+          }
         }
-      }
+      );
     });
   }
 }
