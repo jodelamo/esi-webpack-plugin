@@ -13,14 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/jlowgren/esi-webpack-plugin.git"
   },
-  "author": "Joacim Löwgren <joacim.lowgren@gmail.com>",
+  "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jlowgren/esi-webpack-plugin/issues"
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "nodesi": "^1.11.0",
+    "nodesi": "^1.14.0",
     "webpack-sources": "^1.4.3"
   },
   "eslintConfig": {
@@ -30,8 +30,8 @@
     }
   },
   "devDependencies": {
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
