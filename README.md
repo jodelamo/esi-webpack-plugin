@@ -8,6 +8,7 @@ Version requirements:
 
 - Node.js: `v8.12.0`
 - Webpack: `v4.0.0`
+- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): `v4.0.0`
 
 ## Install
 
