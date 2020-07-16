@@ -2,12 +2,14 @@
   "name": "esi-webpack-plugin",
   "version": "4.0.1",
   "description": "A Webpack plugin to resolve ESI includes",
-  "main": "index.js",
+  "main": "dist/index.common.js",
   "engines": {
     "node": ">=8.12.0"
   },
   "scripts": {
-    "lint": "eslint index.js"
+    "lint": "eslint lib/index.js",
+    "commit": "npx git-cz --disable-emoji",
+    "build": "npx rollup lib/index.js --format cjs --file dist/index.common.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,9 @@
   },
   "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
   "bugs": {
     "url": "https://github.com/jlowgren/esi-webpack-plugin/issues"
   },
@@ -24,18 +29,36 @@
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0"
   },
-  "eslintConfig": {
-    "extends": "airbnb-base",
-    "env": {
-      "node": true
-    }
-  },
   "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "semantic-release": "^17.1.1"
   },
   "peerDependencies": {
     "html-webpack-plugin": "^4.3.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   }
 }
