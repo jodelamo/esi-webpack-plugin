@@ -1,6 +1,6 @@
 {
   "name": "esi-webpack-plugin",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "A Webpack plugin to resolve ESI includes",
   "main": "dist/index.common.js",
   "engines": {
