@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.1...v4.1.2) (2020-09-17)
+
+
+### Bug Fixes
+
+* update to latest major version of commitlint ([9d5b3a9](https://github.com/jlowgren/esi-webpack-plugin/commit/9d5b3a9a4f668c503d03dee1586695dd0eae1bdc))
+
 ## [4.1.1](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.0...v4.1.1) (2020-09-17)
 
 
