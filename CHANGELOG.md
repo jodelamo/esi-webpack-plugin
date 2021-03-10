@@ -1,3 +1,10 @@
+## [4.1.3](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.2...v4.1.3) (2021-03-10)
+
+
+### Bug Fixes
+
+* fix vulnerability warnings ([c9d6b50](https://github.com/jlowgren/esi-webpack-plugin/commit/c9d6b506e2a0f8084356c7ffceb17939fb48dd8d))
+
 ## [4.1.2](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.1...v4.1.2) (2020-09-17)
 
 
