@@ -1,9 +1,9 @@
-name: Build
+name: Static Tests
 
 on: [pull_request]
 
 jobs:
-  build:
+  static-tests:
     runs-on: ubuntu-latest
 
     env:
@@ -11,32 +11,44 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 14.x]
+        node-version: [12.x, 14.x]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2-beta
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
 
-    - name: Build
-      run: yarn build
+      - name: Build
+        run: yarn build
 
-    - name: Test
-      run: yarn test
+      - name: Unit Test
+        run: yarn test
 
-    - name: Lint
-      run: yarn lint
+      - name: ES Lint
+        run: yarn lint
 
-    - name: Lint commits
-      uses: wagoid/commitlint-github-action@v1
-      with:
-        configFile: 'commitlint.config.js'
+      - name: Lint commits
+        uses: wagoid/commitlint-github-action@v1
+        with:
+          configFile: 'commitlint.config.js'
+
+  commitlint:
+    name: Commit Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: wagoid/commitlint-github-action@v3
+        with:
+          configFile: 'commitlint.config.js'
