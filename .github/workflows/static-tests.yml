@@ -4,6 +4,8 @@ on: [pull_request]
 
 jobs:
   static-tests:
+    name: Static Tests
+
     runs-on: ubuntu-latest
 
     env:
