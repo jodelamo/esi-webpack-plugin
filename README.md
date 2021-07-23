@@ -6,9 +6,9 @@ Useful in development in conjunction with [html-webpack-plugin](https://github.c
 
 Version requirements:
 
-- Node.js: `v10.22.0`
+- Node.js: `v12.x`
 - Webpack: `v4.0.0`
-- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): `v4.3.0`
+- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): `v4.3.x`
 
 ## Install
 
