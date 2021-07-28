@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "html-webpack-plugin": "^4.3.0",
+    "html-webpack-plugin": "^5.3.2",
     "nodesi": "^1.14.0",
-    "webpack": "^4.43.0"
+    "webpack": "^5.45.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -48,7 +48,7 @@
     "semantic-release": "^17.4.1"
   },
   "peerDependencies": {
-    "html-webpack-plugin": "^4.3.0"
+    "html-webpack-plugin": "^5.3.2"
   },
   "lint-staged": {
     "*.js": [
