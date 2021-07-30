@@ -1,11 +1,6 @@
 name: Release
 
-on:
-  push:
-    branches:
-      - master
-  repository_dispatch:
-    types: [semantic-release]
+on: workflow_dispatch
 
 jobs:
   release:
