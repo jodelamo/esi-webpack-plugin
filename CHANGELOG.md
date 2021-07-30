@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.3...v5.0.0) (2021-07-30)
+
+
+### Features
+
+* use html-webpack-plugin@5 to work with webpack@5 ([95f6b76](https://github.com/jlowgren/esi-webpack-plugin/commit/95f6b763441d1c5342735605e8c6879650401b42))
+
+
+### BREAKING CHANGES
+
+* New major version of Webpack
+
 ## [4.1.3](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.2...v4.1.3) (2021-03-10)
 
 
