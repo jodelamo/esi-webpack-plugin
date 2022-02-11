@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v5.0.0...v6.0.0) (2022-02-11)
+
+
+### Continuous Integration
+
+* require the latest available Node.js LTS ([3b01b82](https://github.com/jlowgren/esi-webpack-plugin/commit/3b01b82d88155939abd88ea967ef2f9d1b0a01fa))
+
+
+### BREAKING CHANGES
+
+* This package now requires Node.js 16, or higher.
+
 # [5.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v4.1.3...v5.0.0) (2021-07-30)
 
 
