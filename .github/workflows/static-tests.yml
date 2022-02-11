@@ -35,7 +35,7 @@ jobs:
         run: yarn lint
 
       - name: Lint commits
-        uses: wagoid/commitlint-github-action@v1
+        uses: wagoid/commitlint-github-action@v4
         with:
           configFile: 'commitlint.config.js'
 
@@ -47,6 +47,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: wagoid/commitlint-github-action@v3
+      - uses: wagoid/commitlint-github-action@v4
         with:
           configFile: 'commitlint.config.js'
