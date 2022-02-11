@@ -6,23 +6,28 @@ Useful in development in conjunction with [html-webpack-plugin](https://github.c
 
 Version requirements:
 
-__Webpack 5__
-- Node.js: `v12.x`
+**Webpack 5**
+
+- Node.js: `v16.x`
 - Webpack: `v5.x`
 - [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): `v5.3.x`
 
-__Webpack 4__
+**Webpack 4**
+
 - Node.js: `v12.x`
 - Webpack: `v4.x`
 - [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): `v4.3.x`
 
 ## Install
-__Webpack 5__
+
+**Webpack 5**
+
 ```sh
 yarn add --dev esi-webpack-plugin
 ```
 
-__Webpack 4__
+**Webpack 4**
+
 ```sh
 yarn add --dev esi-webpack-plugin@4
 ```

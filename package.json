@@ -4,7 +4,7 @@
   "description": "A Webpack plugin to resolve ESI includes",
   "main": "dist/index.common.js",
   "engines": {
-    "node": ">=v10.22.0"
+    "node": ">=v16.0.0"
   },
   "scripts": {
     "build": "npx rollup lib/index.js --format cjs --file dist/index.common.js",
