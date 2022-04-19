@@ -2,16 +2,24 @@
   "name": "esi-webpack-plugin",
   "version": "6.0.0",
   "description": "A Webpack plugin to resolve ESI includes",
-  "main": "dist/index.common.js",
+  "main": "./dist/commonjs/bundle.js",
+  "module": "./dist/esm/bundle.js",
   "engines": {
     "node": ">=v16.0.0"
   },
   "scripts": {
-    "build": "npx rollup lib/index.js --format cjs --file dist/index.common.js",
+    "build": "rm -rf dist && npx rollup -c rollup.config.js",
     "commit": "npx git-cz --disable-emoji",
     "lint": "eslint lib/index.js",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/bundle.js",
+      "require": "./dist/commonjs/bundle.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -20,7 +28,7 @@
   "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
   "license": "MIT",
   "files": [
-    "dist/*"
+    "dist/**/*"
   ],
   "bugs": {
     "url": "https://github.com/jlowgren/esi-webpack-plugin/issues"

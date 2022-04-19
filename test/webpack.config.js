@@ -1,12 +1,12 @@
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import EsiWebpackPlugin from '../'
+import EsiWebpackPlugin from '../lib/index.js'
 
 module.exports = {
   mode: 'production',
   entry: path.resolve(__dirname, 'index.js'),
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   plugins: [
