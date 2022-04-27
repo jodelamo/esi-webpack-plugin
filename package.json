@@ -10,7 +10,8 @@
     "build": "npx rollup lib/index.js --format cjs --file dist/index.common.js",
     "commit": "npx git-cz --disable-emoji",
     "lint": "eslint lib/index.js",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
