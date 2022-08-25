@@ -1,9 +1,10 @@
 import webpack from 'webpack'
 import options from './webpack.config'
 
+// TODO: Make this a bit smarter and mock a HTTP request instead
 jest.mock('nodesi', () =>
   jest.fn().mockImplementation(() => ({
-    process: jest.fn(() => ''),
+    process: jest.fn(() => 'mock'),
   }))
 )
 
