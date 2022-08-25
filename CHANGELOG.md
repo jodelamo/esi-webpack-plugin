@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v6.0.0...v7.0.0) (2022-08-25)
+
+
+### Features
+
+* export both cjs and esm bundles ([61c88aa](https://github.com/jlowgren/esi-webpack-plugin/commit/61c88aa86bdb89f17c9acbf79cf4a590f1f0b4a6))
+
+
+### BREAKING CHANGES
+
+* Splits build into both ESM and CJS bundles.
+
 # [6.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v5.0.0...v6.0.0) (2022-02-11)
 
 
