@@ -1,3 +1,10 @@
+## [7.0.1](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.0.0...v7.0.1) (2022-10-14)
+
+
+### Bug Fixes
+
+* add missing type field ([acf7690](https://github.com/jlowgren/esi-webpack-plugin/commit/acf7690d627f2faf4a10303600501f369ab7b426))
+
 # [7.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v6.0.0...v7.0.0) (2022-08-25)
 
 
