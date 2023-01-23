@@ -62,8 +62,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "yarn test --findRelatedTests",
-      "yarn lint"
+      "npm test",
+      "npm run lint"
     ]
   },
   "husky": {
