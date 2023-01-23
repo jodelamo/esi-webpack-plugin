@@ -23,13 +23,13 @@ Version requirements:
 **Webpack 5**
 
 ```sh
-yarn add --dev esi-webpack-plugin
+npm install --save-dev esi-webpack-plugin
 ```
 
 **Webpack 4**
 
 ```sh
-yarn add --dev esi-webpack-plugin@4
+npm install --save-dev esi-webpack-plugin@4
 ```
 
 ## Usage
