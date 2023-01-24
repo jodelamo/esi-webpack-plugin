@@ -1,3 +1,10 @@
+## [7.0.2](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.0.1...v7.0.2) (2023-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency html-webpack-plugin to v5.5.0 ([f1fe022](https://github.com/jlowgren/esi-webpack-plugin/commit/f1fe0229a1fde764342505c998373f7d8da706a6))
+
 ## [7.0.1](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.0.0...v7.0.1) (2022-10-14)
 
 
