@@ -1,3 +1,10 @@
+# [7.1.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.0.2...v7.1.0) (2023-02-10)
+
+
+### Features
+
+* add `allowedHosts` option ([1776a01](https://github.com/jlowgren/esi-webpack-plugin/commit/1776a018a090d6a13561f6b67ec669b5d64e35e3))
+
 ## [7.0.2](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.0.1...v7.0.2) (2023-01-24)
 
 
