@@ -20,8 +20,8 @@ test('should pass', (done) => {
 
     const files = stats.toJson().assets.map(({ name }) => name)
 
-    expect(files.indexOf('index.html') !== -1).toBe(true)
-    expect(files.indexOf('bundle.js') !== -1).toBe(true)
+    expect(files.includes('index.html')).toBe(true)
+    expect(files.includes('bundle.js')).toBe(true)
 
     done()
   })
