@@ -41,7 +41,7 @@
     "webpack": "5.77.0"
   },
   "devDependencies": {
-    "@babel/core": "7.21.3",
+    "@babel/core": "7.21.4",
     "@babel/preset-env": "7.20.2",
     "@commitlint/cli": "17.5.1",
     "@commitlint/config-conventional": "17.4.4",
