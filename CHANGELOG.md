@@ -1,3 +1,25 @@
+## [7.1.1](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.0...v7.1.1) (2023-06-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency html-webpack-plugin to v5.5.1 ([112746f](https://github.com/jlowgren/esi-webpack-plugin/commit/112746fc7374885be7bcc1c743b78f4e66da696f))
+* **deps:** update dependency html-webpack-plugin to v5.5.2 ([a0b70f3](https://github.com/jlowgren/esi-webpack-plugin/commit/a0b70f3583d37095d7773361e4a8ce1ce0b965e4))
+* **deps:** update dependency html-webpack-plugin to v5.5.3 ([20772d2](https://github.com/jlowgren/esi-webpack-plugin/commit/20772d2cabd709c491b9d3c229d14a16c73f5670))
+* **deps:** update dependency webpack to v5.76.0 ([490a464](https://github.com/jlowgren/esi-webpack-plugin/commit/490a464f2edbf6a519dcc5abb2f84eb9eb1fd85c))
+* **deps:** update dependency webpack to v5.76.1 ([cb2801c](https://github.com/jlowgren/esi-webpack-plugin/commit/cb2801c328706e57583fb093e364a192a7571267))
+* **deps:** update dependency webpack to v5.76.2 ([5c5d7e6](https://github.com/jlowgren/esi-webpack-plugin/commit/5c5d7e6395a182b5f209e68a39008780463828b5))
+* **deps:** update dependency webpack to v5.76.3 ([be46c83](https://github.com/jlowgren/esi-webpack-plugin/commit/be46c83c8cd727e3ee2deda1f3c4d674b65e708d))
+* **deps:** update dependency webpack to v5.77.0 ([5e2b0ea](https://github.com/jlowgren/esi-webpack-plugin/commit/5e2b0ea12cd02dfc92f581e1cb2a1b4209632070))
+* **deps:** update dependency webpack to v5.78.0 ([f7c84db](https://github.com/jlowgren/esi-webpack-plugin/commit/f7c84dbbaea6c6b9eba023ee4994f2bd53ba15a6))
+* **deps:** update dependency webpack to v5.79.0 ([4803978](https://github.com/jlowgren/esi-webpack-plugin/commit/48039781892913520c82413152ba337fb0bf4848))
+* **deps:** update dependency webpack to v5.80.0 ([5bc934c](https://github.com/jlowgren/esi-webpack-plugin/commit/5bc934c3c42bb046e8ded3ca911f54faaf88b11a))
+* **deps:** update dependency webpack to v5.85.0 ([e6635c5](https://github.com/jlowgren/esi-webpack-plugin/commit/e6635c55573868e2a89bd939d08a372dd316b2a9))
+* **deps:** update dependency webpack to v5.85.1 ([507af78](https://github.com/jlowgren/esi-webpack-plugin/commit/507af78efdf927c1828253dd7f77eb6a45e868a1))
+* **deps:** update dependency webpack to v5.86.0 ([edfa342](https://github.com/jlowgren/esi-webpack-plugin/commit/edfa3429286e0a4b73026211e3f859349233002b))
+* **deps:** update dependency webpack to v5.87.0 ([3224a74](https://github.com/jlowgren/esi-webpack-plugin/commit/3224a7400ab60c56f2074f398da330c58ea558dc))
+* **deps:** update dependency webpack to v5.88.0 ([9739499](https://github.com/jlowgren/esi-webpack-plugin/commit/97394995c293017d995c43bcf03b695b95ac6f56))
+
 # [7.1.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.0.2...v7.1.0) (2023-02-10)
 
 
