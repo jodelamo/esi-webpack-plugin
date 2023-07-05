@@ -1,6 +1,6 @@
 module.exports = {
-  plugins: ['prettier', 'jest'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['jest'],
+  extends: ['eslint:recommended', 'prettier'],
   env: {
     node: true,
     'jest/globals': true,
