@@ -1,6 +1,15 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":semanticCommits", ":automergePatch"],
+  "extends": ["config:base", ":semanticCommits"],
   "branchPrefix": "rv8-",
-  "hashedBranchLength": 20
+  "hashedBranchLength": 20,
+  "separateMinorPatch": true,
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "updateTypes": ["patch"],
+      "labels": ["automerge"],
+      "automerge": true
+    }
+  ]
 }
