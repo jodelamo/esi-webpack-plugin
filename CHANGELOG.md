@@ -1,3 +1,10 @@
+## [7.1.3](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.2...v7.1.3) (2023-09-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency webpack to v5.88.2 ([#318](https://github.com/jlowgren/esi-webpack-plugin/issues/318)) ([3544b41](https://github.com/jlowgren/esi-webpack-plugin/commit/3544b413ffa1476b2f647b7ff78cb1e21df5c86b))
+
 ## [7.1.2](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.1...v7.1.2) (2023-07-15)
 
 
