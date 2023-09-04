@@ -1,3 +1,10 @@
+## [7.1.4](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.3...v7.1.4) (2023-09-04)
+
+
+### Bug Fixes
+
+* `npm audit` to fix some moderate vulnerabilities ([#343](https://github.com/jlowgren/esi-webpack-plugin/issues/343)) ([c2cfe6a](https://github.com/jlowgren/esi-webpack-plugin/commit/c2cfe6a3c97e63f4a6a34d9bb21e7fbb07c0fdc6))
+
 ## [7.1.3](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.2...v7.1.3) (2023-09-03)
 
 
