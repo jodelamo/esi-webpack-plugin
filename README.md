@@ -15,9 +15,9 @@ npm install --save-dev esi-webpack-plugin
 Options map more or less directly to the options provided by
 [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi):
 
-```js
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const EsiWebpackPlugin = require('esi-webpack-plugin')
+```javascript
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import EsiWebpackPlugin from 'esi-webpack-plugin'
 
 module.exports = {
   // ...
