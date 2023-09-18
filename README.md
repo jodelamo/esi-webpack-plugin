@@ -19,7 +19,7 @@ Options map more or less directly to the options provided by
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import EsiWebpackPlugin from 'esi-webpack-plugin'
 
-module.exports = {
+export default {
   // ...
   plugins: [
     new HtmlWebpackPlugin(),
