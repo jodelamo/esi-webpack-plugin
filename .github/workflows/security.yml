@@ -1,0 +1,28 @@
+name: Security
+
+on:
+  push:
+
+jobs:
+  audit:
+    name: Audit
+
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Run Audit
+        run: |
+          npm audit --audit-level high
