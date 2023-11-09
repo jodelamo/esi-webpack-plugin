@@ -1,8 +1,8 @@
 module.exports = {
   clearMocks: true,
-  coverageProvider: 'v8',
-  testEnvironment: 'node',
+  coverageProvider: "v8",
+  testEnvironment: "node",
   transform: {
-    '^.+\\.js$': 'babel-jest',
+    "^.+\\.js$": "babel-jest",
   },
 }

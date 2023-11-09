@@ -16,21 +16,21 @@ Options map more or less directly to the options provided by
 [nodesi](https://github.com/Schibsted-Tech-Polska/nodesi):
 
 ```javascript
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import EsiWebpackPlugin from 'esi-webpack-plugin'
+import HtmlWebpackPlugin from "html-webpack-plugin"
+import EsiWebpackPlugin from "esi-webpack-plugin"
 
 export default {
   // ...
   plugins: [
     new HtmlWebpackPlugin(),
     new EsiWebpackPlugin({
-      baseUrl: 'http://example.com',
+      baseUrl: "http://example.com",
       onError(src, err) {
         console.error(`Error when resolving ${src}: ${err}`)
       },
       processOptions: {
         headers: {
-          Authorization: 'Basic Zm9vOmJhcgo=',
+          Authorization: "Basic Zm9vOmJhcgo=",
         },
       },
     }),
