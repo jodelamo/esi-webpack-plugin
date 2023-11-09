@@ -24,7 +24,11 @@ export default {
   plugins: [
     new HtmlWebpackPlugin(),
     new EsiWebpackPlugin({
-      baseUrl: "http://example.com",
+      baseUrl: "https://example.com",
+      // Note: `baseUrl` is automatically added to `allowedHosts`
+      allowedHosts: [
+        "https://some-other-host.com",
+      ]
       onError(src, err) {
         console.error(`Error when resolving ${src}: ${err}`)
       },
