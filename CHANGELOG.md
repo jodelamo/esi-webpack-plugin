@@ -1,3 +1,19 @@
+# [8.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.5...v8.0.0) (2024-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency html-webpack-plugin to v5.5.4 ([#400](https://github.com/jlowgren/esi-webpack-plugin/issues/400)) ([e054c3c](https://github.com/jlowgren/esi-webpack-plugin/commit/e054c3c1128f06e0741400bfbb5e2465a3713f4c))
+* **deps:** update dependency html-webpack-plugin to v5.6.0 ([#406](https://github.com/jlowgren/esi-webpack-plugin/issues/406)) ([96d28d6](https://github.com/jlowgren/esi-webpack-plugin/commit/96d28d6fb25ae632713b70d0d6758c8701125de2))
+* **deps:** update dependency nodesi to v2 ([#412](https://github.com/jlowgren/esi-webpack-plugin/issues/412)) ([07c16c7](https://github.com/jlowgren/esi-webpack-plugin/commit/07c16c794c9ba928ebb8f49698ba49cf9a673ff0))
+
+
+### BREAKING CHANGES
+
+* **deps:** Marking as breaking change, just in case.
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
 ## [7.1.5](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.4...v7.1.5) (2023-10-25)
 
 ### Bug Fixes
