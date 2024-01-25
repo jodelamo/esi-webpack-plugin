@@ -13,7 +13,7 @@
     "commit": "npx git-cz --disable-emoji",
     "lint": "eslint lib/index.js",
     "test": "jest",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prepublishOnly": "npm run build"
   },
   "exports": {
