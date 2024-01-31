@@ -1,3 +1,19 @@
+# [9.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v8.0.0...v9.0.0) (2024-01-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nodesi to v2.0.1 ([#427](https://github.com/jlowgren/esi-webpack-plugin/issues/427)) ([c107050](https://github.com/jlowgren/esi-webpack-plugin/commit/c1070506289d7536d28e1dcd323bcd41b55e64ce))
+* **deps:** update dependency webpack to v5.90.0 ([#421](https://github.com/jlowgren/esi-webpack-plugin/issues/421)) ([01fa826](https://github.com/jlowgren/esi-webpack-plugin/commit/01fa8263eaf5477a18bb34c289e9c17ce94f3981))
+
+
+* feat(node)!: require node version 20 or higher (#428) ([4e20965](https://github.com/jlowgren/esi-webpack-plugin/commit/4e20965130a7dfe43fc4dc1a6f1406fca355bdad)), closes [#428](https://github.com/jlowgren/esi-webpack-plugin/issues/428)
+
+
+### BREAKING CHANGES
+
+* Dropped support for Node.js versions earlier than 20.11.0
+
 # [8.0.0](https://github.com/jlowgren/esi-webpack-plugin/compare/v7.1.5...v8.0.0) (2024-01-12)
 
 
