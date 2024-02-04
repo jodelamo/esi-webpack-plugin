@@ -1,6 +1,6 @@
 {
   "name": "esi-webpack-plugin",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "type": "module",
   "description": "A Webpack plugin to resolve ESI includes",
   "main": "./dist/commonjs/bundle.js",
