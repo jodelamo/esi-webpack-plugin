@@ -1,3 +1,5 @@
+## [9.0.2](https://github.com/jlowgren/esi-webpack-plugin/compare/v9.0.1...v9.0.2) (2024-02-04)
+
 ## [9.0.1](https://github.com/jlowgren/esi-webpack-plugin/compare/v9.0.0...v9.0.1) (2024-02-02)
 
 
