@@ -3,8 +3,7 @@
   "version": "9.0.4",
   "type": "module",
   "description": "A Webpack plugin to resolve ESI includes",
-  "main": "./dist/commonjs/bundle.js",
-  "module": "./dist/esm/bundle.js",
+  "main": "./dist/esm/bundle.js",
   "engines": {
     "node": ">=20.11.0"
   },
@@ -17,10 +16,8 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
-    ".": {
-      "import": "./dist/esm/bundle.js",
-      "require": "./dist/commonjs/bundle.js"
-    }
+    "import": "./dist/esm/bundle.js",
+    "require": "./dist/commonjs/bundle.js"
   },
   "repository": {
     "type": "git",
