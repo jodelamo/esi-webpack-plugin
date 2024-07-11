@@ -1,3 +1,10 @@
+## [9.0.6](https://github.com/jlowgren/esi-webpack-plugin/compare/v9.0.5...v9.0.6) (2024-07-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency webpack to v5.93.0 ([#477](https://github.com/jlowgren/esi-webpack-plugin/issues/477)) ([e79586d](https://github.com/jlowgren/esi-webpack-plugin/commit/e79586d5db86950fdeaaa23fdd32edec742d929d))
+
 ## [9.0.5](https://github.com/jlowgren/esi-webpack-plugin/compare/v9.0.4...v9.0.5) (2024-05-28)
 
 
