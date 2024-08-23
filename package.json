@@ -12,7 +12,7 @@
     "build": "rm -rf dist && npx rollup -c rollup.config.js",
     "commit": "npx git-cz --disable-emoji",
     "lint": "eslint lib/index.js",
-    "test": "jest",
+    "test": "vitest run",
     "prepare": "husky",
     "prepublishOnly": "npm run build"
   },
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "html-webpack-plugin": "5.6.0",
+    "html-webpack-plugin": "^5.3.2",
     "nodesi": "2.0.1",
     "webpack": "5.94.0"
   },
@@ -49,12 +49,11 @@
     "@semantic-release/git": "10.0.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-jest": "28.8.0",
     "husky": "9.1.5",
-    "jest": "29.7.0",
     "lint-staged": "15.2.9",
     "prettier": "3.3.3",
-    "semantic-release": "23.1.1"
+    "semantic-release": "23.1.1",
+    "vitest": "2.0.5"
   },
   "peerDependencies": {
     "html-webpack-plugin": "^5.3.2"

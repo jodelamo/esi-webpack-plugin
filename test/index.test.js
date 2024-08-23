@@ -1,12 +1,15 @@
+import { test, expect, vi } from "vitest"
 import webpack from "webpack"
 import options from "./webpack.config"
 
 // TODO: Make this a bit smarter and mock a HTTP request instead
-jest.mock("nodesi", () =>
-  jest.fn().mockImplementation(() => ({
-    process: jest.fn(() => "mock"),
-  })),
-)
+vi.mock("nodesi", async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    process: vi.fn(() => "mock"),
+  }
+})
 
 test("should pass", (done) => {
   webpack(options, (err, stats) => {
