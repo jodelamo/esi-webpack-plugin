@@ -39,5 +39,3 @@ jobs:
 
       - name: Commit lint
         uses: wagoid/commitlint-github-action@v6
-        with:
-          configFile: "commitlint.config.js"
