@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
   "dependencies": {
-    "html-webpack-plugin": "5.3.2",
+    "html-webpack-plugin": "5.6.0",
     "nodesi": "2.0.1",
     "webpack": "5.94.0"
   },
