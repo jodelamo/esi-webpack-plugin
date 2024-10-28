@@ -1,3 +1,14 @@
+## [9.0.8](https://github.com/jodelamo/esi-webpack-plugin/compare/v9.0.7...v9.0.8) (2024-10-28)
+
+
+### Bug Fixes
+
+* **audit:** run audit to fix high vulnerability ([#509](https://github.com/jodelamo/esi-webpack-plugin/issues/509)) ([1bb673c](https://github.com/jodelamo/esi-webpack-plugin/commit/1bb673c1bc2526d8ca02a731834b538facf4f8b4))
+* **deps:** update dependency html-webpack-plugin to v5.6.0 ([#498](https://github.com/jodelamo/esi-webpack-plugin/issues/498)) ([850be01](https://github.com/jodelamo/esi-webpack-plugin/commit/850be01e949ac13ef3d7875e82ab5831edd8f48c))
+* **deps:** update dependency html-webpack-plugin to v5.6.3 ([#506](https://github.com/jodelamo/esi-webpack-plugin/issues/506)) ([cc57600](https://github.com/jodelamo/esi-webpack-plugin/commit/cc57600fe49fbbdffcb5583a58dda02519c0bb17))
+* **deps:** update dependency webpack to v5.95.0 ([#500](https://github.com/jodelamo/esi-webpack-plugin/issues/500)) ([855c8d5](https://github.com/jodelamo/esi-webpack-plugin/commit/855c8d5d7d33dd13c0afd9606a9cfbe32daf8428))
+* **release:** fix wrong repository preventing release ([#510](https://github.com/jodelamo/esi-webpack-plugin/issues/510)) ([8f53ec7](https://github.com/jodelamo/esi-webpack-plugin/commit/8f53ec794be92afef1cd2d69a2188ccd3d3172bb))
+
 ## [9.0.7](https://github.com/jlowgren/esi-webpack-plugin/compare/v9.0.6...v9.0.7) (2024-09-20)
 
 
