@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jlowgren/esi-webpack-plugin.git"
+    "url": "git+https://github.com/jodelamo/esi-webpack-plugin.git"
   },
   "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
   "license": "MIT",
@@ -32,9 +32,9 @@
     "dist/**/*"
   ],
   "bugs": {
-    "url": "https://github.com/jlowgren/esi-webpack-plugin/issues"
+    "url": "https://github.com/jodelamo/esi-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/jlowgren/esi-webpack-plugin#readme",
+  "homepage": "https://github.com/jodelamo/esi-webpack-plugin#readme",
   "dependencies": {
     "html-webpack-plugin": "5.6.3",
     "nodesi": "2.0.1",
