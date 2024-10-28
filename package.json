@@ -38,7 +38,7 @@
   "dependencies": {
     "html-webpack-plugin": "5.6.0",
     "nodesi": "2.0.1",
-    "webpack": "5.94.0"
+    "webpack": "5.95.0"
   },
   "devDependencies": {
     "@babel/core": "7.25.9",
