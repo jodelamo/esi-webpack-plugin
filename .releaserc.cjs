@@ -14,4 +14,4 @@ module.exports = {
     "@semantic-release/git",
     "@semantic-release/release-notes-generator",
   ],
-}
+};
