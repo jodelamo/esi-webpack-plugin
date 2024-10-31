@@ -11,7 +11,8 @@
   "scripts": {
     "build": "rm -rf dist && npx rollup -c rollup.config.js",
     "commit": "npx git-cz --disable-emoji",
-    "lint": "eslint lib/index.js",
+    "code-check": "biome check",
+    "code-check:ci": "biome ci",
     "test": "vitest run",
     "prepare": "husky",
     "prepublishOnly": "npm run build"
@@ -28,31 +29,27 @@
   },
   "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
   "license": "MIT",
-  "files": [
-    "dist/**/*"
-  ],
+  "files": ["dist/**/*"],
   "bugs": {
     "url": "https://github.com/jodelamo/esi-webpack-plugin/issues"
   },
   "homepage": "https://github.com/jodelamo/esi-webpack-plugin#readme",
   "dependencies": {
-    "html-webpack-plugin": "5.6.3",
+    "html-webpack-plugin": "^5.3.2",
     "nodesi": "2.0.1",
     "webpack": "5.95.0"
   },
   "devDependencies": {
     "@babel/core": "7.26.0",
     "@babel/preset-env": "7.26.0",
+    "@biomejs/biome": "1.9.4",
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-conventional": "19.5.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "eslint": "9.13.0",
-    "eslint-config-prettier": "9.1.0",
     "globals": "15.11.0",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
-    "prettier": "3.3.3",
     "semantic-release": "24.2.0",
     "vitest": "2.1.4"
   },
@@ -60,10 +57,6 @@
     "html-webpack-plugin": "^5.3.2"
   },
   "lint-staged": {
-    "*.js": [
-      "npm test",
-      "npm run lint",
-      "prettier --write"
-    ]
+    "*.js": ["npm test", "biome check --write"]
   }
 }

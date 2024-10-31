@@ -1,6 +1,6 @@
-import path from "path"
-import HtmlWebpackPlugin from "html-webpack-plugin"
-import EsiWebpackPlugin from "../lib/index.js"
+import path from "node:path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import EsiWebpackPlugin from "../lib/index.js";
 
 module.exports = {
   mode: "production",
@@ -17,8 +17,8 @@ module.exports = {
     new EsiWebpackPlugin({
       baseUrl: "http://example.com",
       onError(src, err) {
-        console.error(`Error when resolving ${src}: ${err}`)
+        console.error(`Error when resolving ${src}: ${err}`);
       },
     }),
   ],
-}
+};
