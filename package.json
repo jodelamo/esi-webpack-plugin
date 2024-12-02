@@ -1,6 +1,6 @@
 {
   "name": "esi-webpack-plugin",
-  "version": "9.0.8",
+  "version": "9.0.9",
   "type": "module",
   "description": "A Webpack plugin to resolve ESI includes",
   "main": "./dist/commonjs/bundle.js",
@@ -29,7 +29,9 @@
   },
   "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
   "license": "MIT",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "bugs": {
     "url": "https://github.com/jodelamo/esi-webpack-plugin/issues"
   },
@@ -56,6 +58,9 @@
     "html-webpack-plugin": "^5.3.2"
   },
   "lint-staged": {
-    "*.js": ["npm test", "biome check --write"]
+    "*.js": [
+      "npm test",
+      "biome check --write"
+    ]
   }
 }
