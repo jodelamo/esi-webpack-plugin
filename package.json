@@ -11,8 +11,8 @@
   "scripts": {
     "build": "rm -rf dist && npx rollup -c rollup.config.js",
     "commit": "npx git-cz --disable-emoji",
-    "code-check": "biome check",
-    "code-check:ci": "biome ci",
+    "biome:check": "biome check",
+    "biome:ci": "biome ci",
     "test": "vitest run",
     "prepare": "husky",
     "prepublishOnly": "npm run build"

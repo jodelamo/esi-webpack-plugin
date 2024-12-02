@@ -34,8 +34,8 @@ jobs:
       - name: Unit test
         run: npm test
 
-      - name: Code check
-        run: npm run code-check:ci
+      - name: Run Biome
+        run: npm run biome:ci
 
       - name: Commit lint
         uses: wagoid/commitlint-github-action@v6
