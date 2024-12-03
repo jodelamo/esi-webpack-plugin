@@ -10,7 +10,6 @@
   },
   "scripts": {
     "build": "rm -rf dist && npx rollup -c rollup.config.js",
-    "commit": "npx git-cz --disable-emoji",
     "biome:check": "biome check",
     "biome:ci": "biome ci",
     "test": "vitest run",
