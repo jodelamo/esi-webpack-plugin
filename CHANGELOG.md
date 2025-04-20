@@ -1,3 +1,12 @@
+## [9.0.10](https://github.com/jodelamo/esi-webpack-plugin/compare/v9.0.9...v9.0.10) (2025-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency webpack to v5.97.0 ([#524](https://github.com/jodelamo/esi-webpack-plugin/issues/524)) ([b010a4f](https://github.com/jodelamo/esi-webpack-plugin/commit/b010a4f6caf950bbe148d1a3c52638252dd8b223))
+* **deps:** update dependency webpack to v5.97.1 ([#527](https://github.com/jodelamo/esi-webpack-plugin/issues/527)) ([d9b83aa](https://github.com/jodelamo/esi-webpack-plugin/commit/d9b83aa0fe90057649818b8cfe959f082cc55738))
+* **deps:** update dependency webpack to v5.99.6 ([#543](https://github.com/jodelamo/esi-webpack-plugin/issues/543)) ([f376d69](https://github.com/jodelamo/esi-webpack-plugin/commit/f376d6906b8397807bd071f2b2861ecf90a61af9))
+
 ## [9.0.9](https://github.com/jodelamo/esi-webpack-plugin/compare/v9.0.8...v9.0.9) (2024-12-02)
 
 
