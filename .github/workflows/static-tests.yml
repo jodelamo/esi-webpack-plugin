@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   static-tests:
     name: Static Tests

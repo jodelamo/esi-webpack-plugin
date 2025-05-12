@@ -3,6 +3,10 @@ name: Security
 on:
   push:
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   audit:
     name: Audit
