@@ -26,7 +26,10 @@
     "type": "git",
     "url": "git+https://github.com/jodelamo/esi-webpack-plugin.git"
   },
-  "author": "Joacim de la Motte <joacim.delamotte@gmail.com>",
+  "author": {
+    "name": "Joacim de la Motte",
+    "email": "joacim.delamotte@gmail.com"
+  },
   "license": "MIT",
   "files": [
     "dist/**/*"
