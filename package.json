@@ -41,7 +41,7 @@
   "dependencies": {
     "html-webpack-plugin": "^5.3.2",
     "nodesi": "2.0.1",
-    "webpack": "5.101.0"
+    "webpack": "5.105.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.14",
